@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<link href="css/form.css" type="text/css" rel="stylesheet">
+<title>Form Page.</title>
+</head>
+<body>
+
+	<div id="wrapper">
+<form aetion="formdata.php" method="POST" name="form1">
+
+	<fieldset> <legend>Ввод личных данных</legend>
+<p class="questien"><label for="name">Введите Ваше имя (макс. 10 символов):</label></p>
+	<p><input class="input" type="text" name="name" id="name" size="30" maxlength="10"></p>
+
+<p class="questien"><label for="password">Введите Ваш пароль:</label></p>
+	<p><input class="input" type="password" id="password" name="password" ></p>
+</fieldset>
+
+<fieldset>
+	<legend>Вопрсы</legend>
+<p class="questien">Любите ли Вы экономить время?</p>
+<p><label>Да<input type="radio" name="time" velue="yes" checked></label>
+	<label>Нет<input type="radio" name="time" value="no"></label></p>
+
+<p class="questien">Какими инструментами по экономии времени Вы пользуйтесь</p>
+   <p><label><input type="checkbox" name="ez">Ежедневник</label>
+<label><input type="checkbox" name="hr" checked>Хронометраж</label>
+<label><input type="checkbox" name="yi">Свои наработки</label>
+   </p>
+
+<p class="questien">Сколько часов в день Вы спите?</p>
+
+<select name="sleep">
+<option>5</option>
+<option>6</option>
+<option checked="seven">7</option>
+<option selected>8</option>
+<option>8+</option>
+</select>
+</fieldset>
+</div>
+
+<p class="questien tr"><label for="text">Поделитесь своими наработками по экономии времени!</label></p>
+<p><textarea class="ta" name="text" cols="50" rows="7" id="text">Текстовый текст...</textarea></p>
+
+<p><input type="submit" name="submit" value="Отправить">
+<input type="reset" name="reset" value="Очистить"></p>
+<p><input type="image" name="imagebotton" img src="image/blueButton.jpg"></p>
+<p><input type="button" name="button" value="Кнопка"></p>
+
+</form>
+
+</body>
+</html>
